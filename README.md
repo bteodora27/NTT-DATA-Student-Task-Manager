@@ -1,20 +1,20 @@
 # Student Task Manager
 
-The Student Task Manager is a REST-based Spring Boot application designed to manage personal tasks[cite: 1]. It serves as a practical demonstration of real-world backend concepts, including authentication, authorization, and automated testing[cite: 1].
+The Student Task Manager is a REST-based Spring Boot application designed to manage personal tasks[cite: 1]. It serves as a practical demonstration of real-world backend concepts, including authentication, authorization, and automated testing.
 
 ## 🚀 Features
 
 This project implements the following core functionalities:
-* **User Authentication:** Secure login and registration system[cite: 1].
-* **Role-Based Access Control:** Distinct permissions for `ROLE_USER` and `ROLE_ADMIN`[cite: 1].
-* **JWT Integration:** Token-based security for protected API routes[cite: 1].
-* **CRUD Operations:** Create, read, and delete functionalities for tasks[cite: 1].
-* **Testing:** Comprehensive coverage using JUnit and Mockito (Unit & Integration tests)[cite: 1].
+* **User Authentication:** Secure login and registration system.
+* **Role-Based Access Control:** Distinct permissions for `ROLE_USER` and `ROLE_ADMIN`.
+* **JWT Integration:** Token-based security for protected API routes.
+* **CRUD Operations:** Create, read, and delete functionalities for tasks.
+* **Testing:** Comprehensive coverage using JUnit and Mockito (Unit & Integration tests).
 
 ## 👥 User Roles & Permissions
 
-* **User (`ROLE_USER`):** Can create new tasks and view only their own tasks[cite: 1].
-* **Admin (`ROLE_ADMIN`):** Can view all tasks across the system, delete any task, and create new users[cite: 1].
+* **User (`ROLE_USER`):** Can create new tasks and view only their own tasks.
+* **Admin (`ROLE_ADMIN`):** Can view all tasks across the system, delete any task, and create new users.
 
 ## 🛠️ Technology Stack
 * **Java 17**
@@ -27,17 +27,17 @@ This project implements the following core functionalities:
 ## 🚦 API Endpoints Overview
 
 **Public Endpoints:**
-* `POST /auth/register` - Register a new user[cite: 1]
-* `POST /auth/login` - Authenticate user and receive JWT[cite: 1]
+* `POST /auth/register` - Register a new user
+* `POST /auth/login` - Authenticate user and receive JWT
 
 **User Endpoints (Requires `Bearer Token`):**
-* `GET /tasks/my` - Get tasks belonging to the logged-in user[cite: 1]
-* `POST /tasks` - Create a new task[cite: 1]
+* `GET /tasks/my` - Get tasks belonging to the logged-in user
+* `POST /tasks` - Create a new task[
 
 **Admin Endpoints (Requires `ROLE_ADMIN`):**
-* `GET /tasks` - List all tasks[cite: 1]
-* `DELETE /tasks/{id}` - Delete a specific task[cite: 1]
-* `POST /admin/users` - Create a new user (Admin only)[cite: 1]
+* `GET /tasks` - List all tasks
+* `DELETE /tasks/{id}` - Delete a specific task
+* `POST /admin/users` - Create a new user (Admin only)
 
 ## 💻 How to Run Locally
 
