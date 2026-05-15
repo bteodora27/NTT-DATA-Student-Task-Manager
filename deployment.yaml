@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-task-manager-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-task-manager
+  template:
+    metadata:
+      labels:
+        app: student-task-manager
+    spec:
+      containers:
+        - name: student-task-manager-container
+          image: student-task-manager:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
