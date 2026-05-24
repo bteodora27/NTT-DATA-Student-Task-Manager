@@ -1,6 +1,6 @@
 # Student Task Manager
 
-The Student Task Manager is a REST-based Spring Boot application designed to manage personal tasks[cite: 1]. It serves as a practical demonstration of real-world backend concepts, including authentication, authorization, and automated testing.
+The Student Task Manager is a REST-based Spring Boot application designed to manage personal tasks. It serves as a practical demonstration of real-world backend concepts, including authentication, authorization, and automated testing.
 
 ## 🚀 Features
 
